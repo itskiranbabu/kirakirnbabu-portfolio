@@ -1,7 +1,7 @@
 # 🚀 How to Enable GitHub Pages - Step-by-Step Guide
 
 ## 📋 Quick Overview
-GitHub Pages will host your portfolio at: **https://itskiranbabu.github.io/portfolio/**
+GitHub Pages will host your portfolio at: **https://itskiranbabu.github.io/kirakirnbabu-portfolio/**
 
 ---
 
@@ -9,7 +9,7 @@ GitHub Pages will host your portfolio at: **https://itskiranbabu.github.io/portf
 
 ### Step 1: Go to Your Repository
 1. Open your browser
-2. Navigate to: **https://github.com/itskiranbabu/portfolio**
+2. Navigate to: **https://github.com/itskiranbabu/kirakirnbabu-portfolio**
 3. Make sure you're logged into GitHub
 
 ### Step 2: Access Settings
