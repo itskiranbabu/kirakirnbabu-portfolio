@@ -6,9 +6,9 @@
 
 :root {
     /* Dark Theme (Default) */
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-tertiary: #334155;
+    --bg-primary: #030303;
+    --bg-secondary: #0a0a0a;
+    --bg-tertiary: #171717;
     --text-primary: #ffffff;
     --text-secondary: #cbd5e1;
     --text-tertiary: #94a3b8;
@@ -17,10 +17,10 @@
     --card-hover: rgba(255, 255, 255, 0.08);
 
     /* Colors (kept for compatibility or specific usage) */
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary: #8b5cf6;
-    --accent: #ec4899;
+    --primary: #f97316;
+    --primary-dark: #ea580c;
+    --secondary: #fb923c;
+    --accent: #f59e0b;
     --success: #22c55e;
     --warning: #f59e0b;
     --error: #ef4444;
@@ -31,9 +31,9 @@
     --white: #ffffff;
 
     /* Gradients */
-    --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    --gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    --gradient-primary: linear-gradient(to right, #f97316, #fb923c);
+    --gradient-secondary: linear-gradient(to right, #ea580c, #f97316);
 
     --shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -265,10 +265,12 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
     font-weight: 900;
-    line-height: 1.1;
-    margin-bottom: 1rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
 }
 
 .gradient-text {
@@ -2370,6 +2372,7 @@ section {
     z-index: 10;
     width: 100%;
 }
+
 /* --- AURA THEME TRANSFORMATION --- */
 :root {
     --aura-orange: #f97316;
@@ -2407,12 +2410,14 @@ section {
     position: absolute;
     left: 50%;
     top: -50%;
-    width: 1px;
+    width: 300px;
     height: 200%;
-    background: linear-gradient(180deg, transparent 0%, rgba(249, 115, 22, 0.6) 50%, transparent 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(249, 115, 22, 0.15) 40%, rgba(249, 115, 22, 0.3) 50%, rgba(249, 115, 22, 0.15) 60%, transparent 100%);
     transform: translateX(-50%);
-    opacity: 0.4;
-    filter: blur(1px);
+    opacity: 1;
+    filter: blur(60px);
+    pointer-events: none;
+    mix-blend-mode: screen;
 }
 
 .aura-glow-center {
@@ -2432,5 +2437,18 @@ section {
     background: rgba(249, 115, 22, 0.1) !important;
     border-color: rgba(249, 115, 22, 0.3) !important;
     color: var(--aura-orange) !important;
+}
+/* Aura Beam Refinements */
+.aura-beam {
+    width: 400px !important;
+    background: linear-gradient(180deg, transparent 0%, rgba(249, 115, 22, 0.2) 30%, rgba(249, 115, 22, 0.5) 50%, rgba(249, 115, 22, 0.2) 70%, transparent 100%) !important;
+    filter: blur(80px) !important;
+    mix-blend-mode: screen;
+}
+.aura-glow-center {
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 60%) !important;
+    width: 800px !important;
+    height: 800px !important;
+    filter: blur(40px);
 }
 
