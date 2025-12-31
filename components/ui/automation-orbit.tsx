@@ -52,7 +52,7 @@ export default function AutomationOrbit() {
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     className="w-24 h-24 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center shadow-[0_0_50px_rgba(249,115,22,0.5)] z-20"
                 >
-                    <span className="text-3xl font-bold text-white">n8n</span>
+                    <span className="text-5xl font-bold text-white">*</span>
                 </motion.div>
                 <div className="absolute inset-0 bg-orange-500/30 blur-xl rounded-full z-10" />
             </div>
