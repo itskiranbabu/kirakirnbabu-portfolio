@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AutomationOrbit from '../components/ui/automation-orbit';
-import '../components/ui/globals.css';
+import { GrowthWidget } from '../components/ui/growth-widget';
 
 const rootElement = document.getElementById('orbit-root');
-
 if (rootElement) {
-    ReactDOM.createRoot(rootElement).render(
+    const root = ReactDOM.createRoot(rootElement);
+    root.render(
         <React.StrictMode>
-            <AutomationOrbit />
+            <GrowthWidget />
         </React.StrictMode>
     );
 }

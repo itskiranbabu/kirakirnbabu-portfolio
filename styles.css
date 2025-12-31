@@ -89,15 +89,34 @@ body {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    gap: 0.75rem;
+    font-size: 1.4rem;
+    font-weight: 800;
     color: var(--text-primary);
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none !important;
 }
 
-.nav-brand i {
-    color: var(--primary);
+.logo-icon-premium {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+.gradient-accent {
+    background: linear-gradient(to right, #ffffff, #f97316);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
@@ -2438,6 +2457,38 @@ section {
     border-color: rgba(249, 115, 22, 0.3) !important;
     color: var(--aura-orange) !important;
 }
+
+/* Growth Widget Styles */
+.growth-card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+.growth-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.5), transparent);
+}
+
+.velocity-text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to bottom, #fff, #a3a3a3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
 /* Aura Beam Refinements */
 .aura-beam {
     width: 400px !important;
@@ -2445,6 +2496,7 @@ section {
     filter: blur(80px) !important;
     mix-blend-mode: screen;
 }
+
 .aura-glow-center {
     background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, transparent 60%) !important;
     width: 800px !important;
@@ -2457,7 +2509,7 @@ section {
 a.nav-brand {
     text-decoration: none !important;
 }
+
 a.nav-brand:hover {
     opacity: 0.9;
 }
-
