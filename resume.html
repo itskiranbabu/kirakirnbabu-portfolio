@@ -11,10 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #2563eb;
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-            --bg-gray: #f8fafc;
+            --primary: #3b82f6;
+            /* Blue-500 */
+            --text-dark: #f1f5f9;
+            /* Slate-100 */
+            --text-light: #94a3b8;
+            /* Slate-400 */
+            --bg-gray: #0f172a;
+            /* Slate-900 */
+            --bg-paper: #1e293b;
+            /* Slate-800 */
+            --border: #334155;
+            /* Slate-700 */
         }
 
         body {
@@ -23,18 +31,20 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #fff;
+            background: #020617;
+            /* Deep Black/Blue */
         }
 
         .resume-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 4rem 2rem;
+            min-height: 100vh;
         }
 
         /* Header */
         header {
-            border-bottom: 2px solid var(--bg-gray);
+            border-bottom: 2px solid var(--border);
             padding-bottom: 2rem;
             margin-bottom: 2rem;
             display: flex;
@@ -46,6 +56,7 @@
             font-size: 2.5rem;
             margin: 0 0 0.5rem 0;
             color: var(--text-dark);
+            letter-spacing: -0.02em;
         }
 
         .header-content .title {
@@ -60,6 +71,7 @@
             gap: 1.5rem;
             font-size: 0.9rem;
             color: var(--text-light);
+            flex-wrap: wrap;
         }
 
         .contact-info a {
@@ -68,6 +80,11 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
         }
 
         .print-btn {
@@ -77,62 +94,80 @@
             padding: 0.75rem 1.5rem;
             border-radius: 8px;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
             display: flex;
             align-items: center;
             gap: 0.5rem;
             transition: all 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
         .print-btn:hover {
-            opacity: 0.9;
+            background: #2563eb;
+            transform: translateY(-1px);
         }
 
         /* Sections */
         section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
         }
 
         h2 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.1em;
             color: var(--text-light);
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.75rem;
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         /* Experience */
         .experience-item {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .exp-header {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
             margin-bottom: 0.5rem;
+        }
+
+        .exp-title-row {
+            display: flex;
+            flex-direction: column;
         }
 
         .exp-title {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: var(--text-dark);
         }
 
         .exp-company {
             color: var(--primary);
             font-weight: 500;
+            font-size: 1rem;
         }
 
         .exp-date {
             color: var(--text-light);
             font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .exp-details p {
+            color: #cbd5e1;
+            margin-bottom: 0.75rem;
         }
 
         .exp-details ul {
             margin: 0.5rem 0 0 1.2rem;
             padding: 0;
-            color: var(--text-dark);
+            color: #cbd5e1;
+            /* Slate-300 */
         }
 
         .exp-details li {
@@ -142,38 +177,44 @@
         /* Skills */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
         }
 
         .skill-category strong {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             color: var(--text-dark);
+            font-size: 1.1rem;
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
 
         .skill-tag {
-            background: var(--bg-gray);
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 0.35rem 0.85rem;
+            border-radius: 6px;
             font-size: 0.85rem;
-            color: var(--text-dark);
+            color: #93c5fd;
+            /* Blue-300 */
         }
 
+        /* Print Styles */
         @media print {
             body {
                 background: white;
+                color: #000;
             }
 
             .resume-container {
                 padding: 0;
                 max-width: 100%;
+                margin: 0;
             }
 
             .print-btn {
@@ -182,7 +223,64 @@
 
             a {
                 text-decoration: none;
-                color: black;
+                color: #000 !important;
+            }
+
+            header {
+                border-bottom-color: #e2e8f0;
+            }
+
+            h2 {
+                color: #475569;
+                border-bottom-color: #e2e8f0;
+            }
+
+            .header-content h1 {
+                color: #000;
+            }
+
+            .header-content .title {
+                color: #2563eb;
+            }
+
+            .contact-info {
+                color: #64748b;
+            }
+
+            .exp-title {
+                color: #000;
+            }
+
+            .exp-company {
+                color: #2563eb;
+            }
+
+            .exp-details p,
+            .exp-details ul {
+                color: #334155;
+            }
+
+            .skill-tag {
+                background: #f1f5f9;
+                border: 1px solid #cbd5e1;
+                color: #334155;
+            }
+
+            /* Reset Page */
+            @page {
+                margin: 1.5cm;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .exp-header {
+                flex-direction: column;
+                gap: 0.25rem;
             }
         }
     </style>
@@ -193,36 +291,121 @@
         <header>
             <div class="header-content">
                 <h1>Kiran Babu</h1>
-                <div class="title">AI Automation Architect & Full Stack Engineer</div>
+                <div class="title">AI Automation Architect & Technical Scrum Master</div>
                 <div class="contact-info">
                     <a href="mailto:babu.jtek@gmail.com"><i class="fas fa-envelope"></i> babu.jtek@gmail.com</a>
                     <a href="https://linkedin.com/in/itskiranbabu" target="_blank"><i class="fab fa-linkedin"></i>
-                        LinkedIn</a>
-                    <a href="https://github.com/itskiranbabu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        linkedin.com/in/itskiranbabu</a>
                     <a href="https://itskiranbabu.github.io/kirakirnbabu-portfolio/" target="_blank"><i
                             class="fas fa-globe"></i> Portfolio</a>
                 </div>
             </div>
             <button onclick="window.print()" class="print-btn">
-                <i class="fas fa-download"></i> Save as PDF
+                <i class="fas fa-download"></i> Download PDF
             </button>
         </header>
 
         <section>
             <h2>Professional Summary</h2>
             <p>
-                Visionary AI Architect and Full Stack Engineer specializing in "Agentic Era" technologies.
-                Expert in building production-ready AI ecosystems, orchestrating multi-agent workflows, and creating
-                high-impact SaaS solutions.
-                Bridging the gap between vibe-coding creativity and enterprise-grade engineering.
+                Visionary Technical Lead and Scrum Master with over 7 years of experience Architecting the "Agentic
+                Era".
+                Expert in orchestrating complex AI workflows (n8n, LangChain), driving enterprise Agile transformations,
+                and building scalable full-stack applications.
+                Bridging the gap between cutting-edge AI innovation and robust enterprise engineering.
             </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+
+            <!-- TCS -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-row">
+                        <span class="exp-title">Technical Scrum Master</span>
+                        <span class="exp-company">Tata Consultancy Services (TCS)</span>
+                    </div>
+                    <span class="exp-date">Nov 2020 - Present</span>
+                </div>
+                <div class="exp-details">
+                    <p>Leading enterprise-level Agile transformations and AI agent orchestration for global retail and
+                        banking domains.</p>
+                    <ul>
+                        <li>Spearheaded the integration of <strong>AI Agents</strong> into legacy workflows using n8n
+                            and Langflow, increasing automation efficiency by 40%.</li>
+                        <li>Mentored multi-disciplinary teams in Scrum/Kanban best practices, improving delivery
+                            velocity and reducing cycle time.</li>
+                        <li>Developed the "EnCompass" LLM framework for internal knowledge retrieval.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sasken -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-row">
+                        <span class="exp-title">Project Leader</span>
+                        <span class="exp-company">Sasken Technologies</span>
+                    </div>
+                    <span class="exp-date">Mar 2019 - Sep 2020</span>
+                </div>
+                <div class="exp-details">
+                    <p>Managed technical projects and cross-functional teams, ensuring successful product delivery and
+                        lifecycle management.</p>
+                    <ul>
+                        <li>Oversaw end-to-end product development life cycles, delivering complex technical solutions
+                            for telecom clients.</li>
+                        <li>Improved engineering processes, resulting in a 20% reduction in bug leakage during UAT
+                            phases.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- LTI -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-row">
+                        <span class="exp-title">Technical Lead</span>
+                        <span class="exp-company">Larsen & Toubro Infotech (LTI)</span>
+                    </div>
+                    <span class="exp-date">Sep 2016 - Mar 2019</span>
+                </div>
+                <div class="exp-details">
+                    <p>Designed and architected enterprise applications, focusing on system scalability and code
+                        quality.</p>
+                    <ul>
+                        <li>Led the migration of monolithic applications to microservices architecture.</li>
+                        <li>Established coding standards and conducted code reviews to ensure high-quality deliverables.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Virtusa -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div class="exp-title-row">
+                        <span class="exp-title">Consultant</span>
+                        <span class="exp-company">Virtusa</span>
+                    </div>
+                    <span class="exp-date">May 2013 - Sep 2016</span>
+                </div>
+                <div class="exp-details">
+                    <p>Provided technical consulting and development services for global clients.</p>
+                    <ul>
+                        <li>Developed and maintained critical web applications for financial services sector.</li>
+                        <li>Collaborated with global teams to ensure 24/7 system availability.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>Technical Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <strong>AI & Orchestration</strong>
+                    <strong>AI & Automation</strong>
                     <div class="skill-tags">
                         <span class="skill-tag">n8n</span>
                         <span class="skill-tag">LangChain</span>
@@ -232,88 +415,55 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <strong>Full Stack Development</strong>
+                    <strong>Leadership</strong>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scrum Master</span>
+                        <span class="skill-tag">Agile Coaching</span>
+                        <span class="skill-tag">Team Mentoring</span>
+                        <span class="skill-tag">System Architecture</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <strong>Full Stack</strong>
                     <div class="skill-tags">
                         <span class="skill-tag">React / Next.js</span>
                         <span class="skill-tag">TypeScript</span>
                         <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <strong>DevOps & Tools</strong>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">Vercel</span>
-                        <span class="skill-tag">Notion API</span>
-                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">DevOps (Docker/AWS)</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Key Projects</h2>
+            <h2>Key Projects & Open Source</h2>
 
             <div class="experience-item">
                 <div class="exp-header">
-                    <div>
+                    <div class="exp-title-row">
                         <span class="exp-title">Premium n8n Workflow Automation Suite</span>
                     </div>
+                    <span class="exp-date">2024</span>
                 </div>
                 <div class="exp-details">
-                    <p>Designed and documented an enterprise-grade collection of 4,343+ production-ready automation
-                        workflows.</p>
+                    <p>Architected an enterprise-grade collection of 4,300+ automation workflows.</p>
                     <ul>
-                        <li>Architected RAG pipelines for document processing and knowledge retrieval.</li>
-                        <li>Implemented multi-agent orchestration for complex decision-making tasks.</li>
-                        <li>Created comprehensive documentation for AI/ML, Marketing, and DevOps categories.</li>
+                        <li>Designed RAG pipelines for document processing and knowledge retrieval.</li>
+                        <li>Created comprehensive documentation for AI/ML and DevOps workflows.</li>
+                        <li><strong>Link</strong>: github.com/itskiranbabu/n8n-workflows</li>
                     </ul>
                 </div>
             </div>
 
             <div class="experience-item">
                 <div class="exp-header">
-                    <div>
-                        <span class="exp-title">Bhindi SaaS Clone</span>
-                    </div>
-                </div>
-                <div class="exp-details">
-                    <p>A high-performance B2B SaaS platform clone demonstrating advanced frontend engineering.</p>
-                    <ul>
-                        <li>Built with Next.js 14, TypeScript, and Tailwind CSS for optimal performance.</li>
-                        <li>Implemented responsive design patterns and modern UI components.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
+                    <div class="exp-title-row">
                         <span class="exp-title">Awesome AI Vibe Coding</span>
                     </div>
+                    <span class="exp-date">2024</span>
                 </div>
                 <div class="exp-details">
                     <p>Curated a definitive roadmap and resource collection for the "Vibe Coding" movement.</p>
-                    <ul>
-                        <li>Aggregated top resources for AI-assisted development and agentic engineering.</li>
-                        <li>Established a community hub for developers transitioning to AI-first workflows.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Education & Certifications</h2>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <span class="exp-title">B.Tech in Computer Science</span>
-                    <span class="exp-date">2018 - 2022</span>
-                </div>
-                <div class="exp-details">
-                    <p>Focus on Artificial Intelligence, Data Structures, and System Architecture.</p>
                 </div>
             </div>
         </section>
