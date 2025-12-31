@@ -8,6 +8,8 @@ export type AnimationPhase = "scatter" | "line" | "circle" | "bottom-strip";
 
 interface FlipCardProps {
     src: string;
+    link: string;
+    title: string;
     index: number;
     total: number;
     phase: AnimationPhase;
@@ -15,19 +17,26 @@ interface FlipCardProps {
 }
 
 // --- FlipCard Component ---
-const IMG_WIDTH = 60;  // Reduced from 100
-const IMG_HEIGHT = 85; // Reduced from 140
+const IMG_WIDTH = 50;  // Reduced for cleaner layout
+const IMG_HEIGHT = 70; // Reduced for cleaner layout
 
 function FlipCard({
     src,
+    link,
+    title,
     index,
     total,
     phase,
     target,
 }: FlipCardProps) {
+    const handleClick = () => {
+        if (link) {
+            window.open(link, '_blank');
+        }
+    };
+
     return (
         <motion.div
-            // Smoothly animate to the coordinates defined by the parent
             animate={{
                 x: target.x,
                 y: target.y,
@@ -40,16 +49,15 @@ function FlipCard({
                 stiffness: 40,
                 damping: 15,
             }}
-
-            // Initial style
             style={{
                 position: "absolute",
                 width: IMG_WIDTH,
                 height: IMG_HEIGHT,
-                transformStyle: "preserve-3d", // Essential for the 3D hover effect
+                transformStyle: "preserve-3d",
                 perspective: "1000px",
             }}
             className="cursor-pointer group"
+            onClick={handleClick}
         >
             <motion.div
                 className="relative h-full w-full"
@@ -59,25 +67,25 @@ function FlipCard({
             >
                 {/* Front Face */}
                 <div
-                    className="absolute inset-0 h-full w-full overflow-hidden rounded-xl shadow-lg bg-gray-200"
+                    className="absolute inset-0 h-full w-full overflow-hidden rounded-lg shadow-lg bg-gray-200 border border-white/10"
                     style={{ backfaceVisibility: "hidden" }}
                 >
                     <img
                         src={src}
-                        alt={`hero-${index}`}
-                        className="h-full w-full object-cover"
+                        alt={title}
+                        className="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all"
                     />
-                    <div className="absolute inset-0 bg-black/10 transition-colors group-hover:bg-transparent" />
+                    <div className="absolute inset-0 bg-black/20 transition-colors group-hover:bg-transparent" />
                 </div>
 
                 {/* Back Face */}
                 <div
-                    className="absolute inset-0 h-full w-full overflow-hidden rounded-xl shadow-lg bg-gray-900 flex flex-col items-center justify-center p-4 border border-gray-700"
+                    className="absolute inset-0 h-full w-full overflow-hidden rounded-lg shadow-lg bg-[#030303] flex flex-col items-center justify-center p-2 border border-orange-500/30"
                     style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
                 >
                     <div className="text-center">
-                        <p className="text-[8px] font-bold text-blue-400 uppercase tracking-widest mb-1">View</p>
-                        <p className="text-xs font-medium text-white">Details</p>
+                        <p className="text-[6px] font-bold text-orange-400 uppercase tracking-widest mb-1">Explore</p>
+                        <p className="text-[8px] font-medium text-white leading-tight px-1 line-clamp-2">{title}</p>
                     </div>
                 </div>
             </motion.div>
@@ -85,33 +93,30 @@ function FlipCard({
     );
 }
 
-// --- Main Hero Component ---
-const TOTAL_IMAGES = 20;
-const MAX_SCROLL = 3000; // Virtual scroll range
-
-// Unsplash Images
-const IMAGES = [
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&q=80",
-    "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=300&q=80",
-    "https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&q=80",
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=300&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=300&q=80",
-    "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=300&q=80",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&q=80",
-    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=300&q=80",
-    "https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?w=300&q=80",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&q=80",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&q=80",
-    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=300&q=80",
-    "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=300&q=80",
-    "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=300&q=80",
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=300&q=80",
-    "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=300&q=80",
-    "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=300&q=80",
-    "https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=300&q=80",
-    "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=300&q=80",
-    "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?w=300&q=80",
+// Product Data
+const PRODUCTS = [
+    { title: "n8n Automation Suite", src: "https://images.unsplash.com/photo-1518186239741-999335552345?w=300", link: "https://itskiranbabu.github.io/n8n-workflows/" },
+    { title: "Creator Revenue HQ", src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300", link: "https://kiranbabuai.gumroad.com/l/uwjgas" },
+    { title: "SaaS Business Hub", src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300", link: "https://kiranbabuai.gumroad.com/l/crcrq" },
+    { title: "Freelance Business Hub", src: "https://images.unsplash.com/photo-1454165833761-1215b0213821?w=300", link: "https://kiranbabuai.gumroad.com/l/zkpdwi" },
+    { title: "Productivity System", src: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300", link: "https://kiranbabuai.gumroad.com/l/skjhz" },
+    { title: "Habit Stacker Pro", src: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=300", link: "https://kiranbabuai.gumroad.com/l/lekonw" },
+    { title: "Goal Tracking Hub", src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300", link: "https://kiranbabuai.gumroad.com/l/hquiq" },
+    { title: "Student Success System", src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=300", link: "https://kiranbabuai.gumroad.com/l/apvhdn" },
+    { title: "AI Prompt Power Pack", src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300", link: "https://kiranbabuai.gumroad.com/l/shlhrb" },
+    { title: "Content Planner", src: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300", link: "https://kiranbabuai.gumroad.com/l/ynnxj" },
+    { title: "YouTube Dashboard", src: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=300", link: "https://kiranbabuai.gumroad.com/l/xxstk" },
+    { title: "Affiliate Tracker", src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300", link: "https://kiranbabuai.gumroad.com/l/eilcwh" },
+    { title: "Finance Tracker", src: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=300", link: "https://kiranbabuai.gumroad.com/l/haebsi" },
+    { title: "Real Estate Manager", src: "https://images.unsplash.com/photo-1560518883-ce09059ee7fa?w=300", link: "https://kiranbabuai.gumroad.com/l/dwicxr" },
+    { title: "Wedding Planner", src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=300", link: "https://kiranbabuai.gumroad.com/l/tvpwgvp" },
+    { title: "Career Tracker", src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300", link: "https://kiranbabuai.gumroad.com/l/knvwn" },
+    { title: "Meal Recipe Manager", src: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=300", link: "https://kiranbabuai.gumroad.com/l/lcstdth" },
+    { title: "Fitness Wellness Hub", src: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300", link: "https://kiranbabuai.gumroad.com/l/armdis" },
+    { title: "AI Framework v2", src: "https://images.unsplash.com/photo-1531746790731-6c307f1d932b?w=300", link: "https://itskiranbabu.github.io/n8n-workflows/" },
+    { title: "Automation Blueprint", src: "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=300", link: "https://itskiranbabu.github.io/n8n-workflows/" },
 ];
+const IMAGES = PRODUCTS.map(p => p.src); // Keep for compatibility if needed elsewhere
 
 // Helper for linear interpolation
 const lerp = (start: number, end: number, t: number) => start * (1 - t) + end * t;
@@ -261,7 +266,7 @@ export default function IntroAnimation() {
     const contentY = useTransform(smoothMorph, [0.8, 1], [20, 0]);
 
     return (
-        <div ref={containerRef} className="relative w-full h-full bg-[#FAFAFA] overflow-hidden">
+        <div ref={containerRef} className="relative w-full h-full bg-[#030303] overflow-hidden">
             {/* Container */}
             <div className="flex h-full w-full flex-col items-center justify-center perspective-1000">
 
@@ -271,7 +276,7 @@ export default function IntroAnimation() {
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         animate={introPhase === "circle" && morphValue < 0.5 ? { opacity: 1 - morphValue * 2, y: 0, filter: "blur(0px)" } : { opacity: 0, filter: "blur(10px)" }}
                         transition={{ duration: 1 }}
-                        className="text-2xl font-medium tracking-tight text-gray-800 md:text-4xl"
+                        className="text-2xl font-medium tracking-tight text-white md:text-4xl"
                     >
                         The future is built on AI.
                     </motion.h1>
@@ -290,39 +295,34 @@ export default function IntroAnimation() {
                     style={{ opacity: contentOpacity, y: contentY }}
                     className="absolute top-[10%] z-10 flex flex-col items-center justify-center text-center pointer-events-none px-4"
                 >
-                    <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 tracking-tight mb-4">
-                        Explore Our Vision
+                    <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight mb-4">
+                        Premium Digital Assets
                     </h2>
-                    <p className="text-sm md:text-base text-gray-600 max-w-lg leading-relaxed">
-                        Discover a world where technology meets creativity. <br className="hidden md:block" />
-                        Scroll through our curated collection of innovations designed to shape the future.
+                    <p className="text-sm md:text-base text-gray-400 max-w-lg leading-relaxed">
+                        Scroll to explore battle-tested workflows and templates. <br className="hidden md:block" />
+                        Hover to flip and click to explore the full product details.
                     </p>
                 </motion.div>
 
                 {/* Main Container */}
                 <div className="relative flex items-center justify-center w-full h-full">
-                    {IMAGES.slice(0, TOTAL_IMAGES).map((src, i) => {
+                    {PRODUCTS.map((prod, i) => {
                         let target = { x: 0, y: 0, rotation: 0, scale: 1, opacity: 1 };
 
                         // 1. Intro Phases (Scatter -> Line)
                         if (introPhase === "scatter") {
                             target = scatterPositions[i];
                         } else if (introPhase === "line") {
-                            const lineSpacing = 70; // Adjusted for smaller images (60px width + 10px gap)
-                            const lineTotalWidth = TOTAL_IMAGES * lineSpacing;
+                            const lineSpacing = 60;
+                            const lineTotalWidth = PRODUCTS.length * lineSpacing;
                             const lineX = i * lineSpacing - lineTotalWidth / 2;
                             target = { x: lineX, y: 0, rotation: 0, scale: 1, opacity: 1 };
                         } else {
                             // 2. Circle Phase & Morph Logic
-
-                            // Responsive Calculations
                             const isMobile = containerSize.width < 768;
                             const minDimension = Math.min(containerSize.width, containerSize.height);
-
-                            // A. Calculate Circle Position
                             const circleRadius = Math.min(minDimension * 0.35, 350);
-
-                            const circleAngle = (i / TOTAL_IMAGES) * 360;
+                            const circleAngle = (i / PRODUCTS.length) * 360;
                             const circleRad = (circleAngle * Math.PI) / 180;
                             const circlePos = {
                                 x: Math.cos(circleRad) * circleRadius,
@@ -330,46 +330,16 @@ export default function IntroAnimation() {
                                 rotation: circleAngle + 90,
                             };
 
-                            // B. Calculate Bottom Arc Position
-                            // "Rainbow" Arch: Convex up. Center is highest point.
-
-                            // Radius:
                             const baseRadius = Math.min(containerSize.width, containerSize.height * 1.5);
                             const arcRadius = baseRadius * (isMobile ? 1.4 : 1.1);
-
-                            // Position:
                             const arcApexY = containerSize.height * (isMobile ? 0.35 : 0.25);
                             const arcCenterY = arcApexY + arcRadius;
-
-                            // Spread angle:
                             const spreadAngle = isMobile ? 100 : 130;
                             const startAngle = -90 - (spreadAngle / 2);
-                            const step = spreadAngle / (TOTAL_IMAGES - 1);
-
-                            // Apply Scroll Rotation (Shuffle) with Bounds
-                            // We want to clamp rotation so images don't disappear.
-                            // Map scroll range [600, 3000] to a limited rotation range.
-                            // Range: [-spreadAngle/2, spreadAngle/2] keeps them roughly in view.
-                            // We map 0 -> 1 (progress of scroll loop) to this range.
-
-                            // Note: rotateValue comes from smoothScrollRotate which maps [600, 3000] -> [0, 360]
-                            // We need to adjust that mapping in the hook above, OR adjust it here.
-                            // Better to adjust it here relative to the spread.
-
-                            // Let's interpret rotateValue (0 to 360) as a progress 0 to 1
+                            const step = spreadAngle / (PRODUCTS.length - 1);
                             const scrollProgress = Math.min(Math.max(rotateValue / 360, 0), 1);
-
-                            // Calculate bounded rotation:
-                            // Move from 0 (centered) to -spreadAngle (all the way left) or similar.
-                            // Let's allow scrolling through the list.
-                            // Total sweep needed to see all items if we start at one end?
-                            // If we start centered, we can go +/- spreadAngle/2.
-
-                            // User wants to "stop on the last image".
-                            // Let's map scroll to: 0 -> -spreadAngle (shifts items left)
-                            const maxRotation = spreadAngle * 0.8; // Don't go all the way, keep last item visible
+                            const maxRotation = spreadAngle * 0.8;
                             const boundedRotation = -scrollProgress * maxRotation;
-
                             const currentArcAngle = startAngle + (i * step) + boundedRotation;
                             const arcRad = (currentArcAngle * Math.PI) / 180;
 
@@ -377,10 +347,9 @@ export default function IntroAnimation() {
                                 x: Math.cos(arcRad) * arcRadius + parallaxValue,
                                 y: Math.sin(arcRad) * arcRadius + arcCenterY,
                                 rotation: currentArcAngle + 90,
-                                scale: isMobile ? 1.4 : 1.8, // Increased scale for active state
+                                scale: isMobile ? 1.4 : 1.8,
                             };
 
-                            // C. Interpolate (Morph)
                             target = {
                                 x: lerp(circlePos.x, arcPos.x, morphValue),
                                 y: lerp(circlePos.y, arcPos.y, morphValue),
@@ -393,10 +362,12 @@ export default function IntroAnimation() {
                         return (
                             <FlipCard
                                 key={i}
-                                src={src}
+                                src={prod.src}
+                                link={prod.link}
+                                title={prod.title}
                                 index={i}
-                                total={TOTAL_IMAGES}
-                                phase={introPhase} // Pass intro phase for initial animations
+                                total={PRODUCTS.length}
+                                phase={introPhase}
                                 target={target}
                             />
                         );
