@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Primary Meta Tags -->
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'page_title': 'Home | Kiran Babu Portfolio'
+        });
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran Babu - AI Automation Engineer | Full-Stack Developer | GitHub Portfolio</title>
-    <meta name="description" content="Professional portfolio of Kiran Babu - AI Automation Engineer, Full-Stack Developer, UX Designer, and Open Source Contributor specializing in production-ready AI platforms">
+    <title>Kiran Babu - AI Automation Engineer | Full-Stack Developer | UX Designer</title>
+    <meta name="title" content="Kiran Babu - AI Automation Engineer | Full-Stack Developer">
+    <meta name="description"
+        content="Building production-ready AI automation platforms, multi-agent systems, and scalable SaaS applications. 7+ years of experience in AI/ML, full-stack development, and UX design. Specialized in React, TypeScript, Python, and enterprise solutions.">
+    <meta name="keywords"
+        content="AI Automation Engineer, Full-Stack Developer, UX Designer, React Developer, TypeScript, Python, AI/ML, LLM, Multi-Agent Systems, SaaS Development, Kiran Babu, Software Engineer, Web Development, Cloud Architecture, AWS, GCP">
+    <meta name="author" content="Kiran Babu">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://itskiranbabu.github.io/portfolio/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://itskiranbabu.github.io/portfolio/">
+    <meta property="og:title" content="Kiran Babu - AI Automation Engineer | Full-Stack Developer">
+    <meta property="og:description"
+        content="Building production-ready AI automation platforms and scalable SaaS applications. 7+ years of experience in AI/ML and enterprise software development.">
+    <meta property="og:image" content="https://itskiranbabu.github.io/portfolio/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Kiran Babu Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@itskiranbabu">
+    <meta name="twitter:creator" content="@itskiranbabu">
+    <meta name="twitter:title" content="Kiran Babu - AI Automation Engineer">
+    <meta name="twitter:description"
+        content="Building production-ready AI automation platforms and scalable SaaS applications. 7+ years of experience.">
+    <meta name="twitter:image" content="https://itskiranbabu.github.io/portfolio/assets/twitter-card.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kiran Babu",
+      "url": "https://itskiranbabu.github.io/portfolio/",
+      "image": "https://itskiranbabu.github.io/portfolio/assets/profile.jpg",
+      "sameAs": [
+        "https://github.com/itskiranbabu",
+        "https://www.linkedin.com/in/itskiranbabu/",
+        "https://twitter.com/itskiranbabu"
+      ],
+      "jobTitle": "Technical Scrum Master",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tata Consultancy Services (TCS)"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Agile Leadership"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "AI Automation"
+        }
+      ],
+      "knowsAbout": [
+        "Agile Coaching",
+        "Scrum",
+        "Enterprise Agile Leadership",
+        "Value Stream Optimization",
+        "Product Management",
+        "AI Agent Orchestration",
+        "Modular Architecture"
+      ],
+      "email": "babu.jtek@gmail.com",
+      "description": "Technical Scrum Master @ TCS | Enterprise Agile Leadership | AI-Driven Solutions | Product Innovation | Digital Transformation Expert"
+    }
+    </script>
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.github.com">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -19,11 +121,17 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="products.html" class="nav-link">Digital Products</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <!-- NEW: Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,66 +141,68 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Available for opportunities
+    <section id="hero">
+        <div class="grid-bg"></div>
+        <div class="radial-accent animate-fade-up"></div>
+
+        <div class="container hero-content">
+            <a href="#about" class="hero-eyebrow animate-fade-in shadow-sm">
+                Next-Gen Agile & AI Orchestration
+                <i class="fas fa-chevron-right"></i>
+            </a>
+
+            <h1 class="hero-title animate-fade-in">
+                Architecting the <br>
+                <span class="gradient-text">Agentic Era</span>
+            </h1>
+
+            <p class="hero-subtitle animate-fade-in">
+                Building production-ready AI ecosystems through 'Vibe Coding' and Agentic Orchestration.
+                Bridging technical excellence with adaptive leadership for the next digital frontier.
+            </p>
+
+            <div class="hero-cta animate-fade-in mb-5">
+                <a href="#projects" class="btn btn-primary" style="z-index: 20;">
+                    <i class="fas fa-rocket"></i>
+                    Get Started
+                </a>
+                <a href="assets/Kiran_Babu_Resume.pdf" download="Kiran_Babu_Resume.pdf" class="btn btn-secondary"
+                    id="downloadResume" style="z-index: 20;">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+
+            <div class="hero-stats animate-fade-in">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Digital Assets</div>
                 </div>
-                <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Kiran Babu</span>
-                </h1>
-                <h2 class="hero-subtitle">AI Automation Engineer | Full-Stack Developer | UX Designer</h2>
-                <p class="hero-description">
-                    Building production-ready AI automation platforms, multi-agent systems, and scalable SaaS applications. 
-                    Passionate about creating innovative solutions that bridge design thinking with cutting-edge technology. 
-                    Specializing in AI/ML, workflow automation, and enterprise-grade software development.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">7+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Collaborations</div>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Years Exp</div>
                 </div>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        View Projects
-                    </a>
-                    <a href="https://github.com/itskiranbabu" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-github"></i>
-                        GitHub Profile
-                    </a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/itskiranbabu" target="_blank" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank" class="social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com/itskiranbabu" target="_blank" class="social-link" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:itskeyrun.ai@gmail.com" class="social-link" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Collaborations</div>
                 </div>
             </div>
+            <div class="social-links">
+                <a href="https://github.com/itskiranbabu" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank" class="social-link"
+                    title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/itskiranbabu" target="_blank" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:babu.jtek@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
         </div>
         <div class="scroll-indicator">
             <div class="mouse">
@@ -110,10 +220,10 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">About Me</span>
-                <h2 class="section-title">Building the Future of AI Automation</h2>
+                <h2 class="section-title">Agile Leadership & AI Orchestration</h2>
                 <p class="section-description">
-                    A curiosity-driven engineer and designer with 7+ years of experience in creating innovative solutions 
-                    that combine technical excellence with exceptional user experience
+                    Technical Scrum Master and AI Automation Specialist focused on building high-performing Agile teams
+                    and driving digital transformation through intelligent automation and adaptive leadership.
                 </p>
             </div>
             <div class="about-content">
@@ -122,59 +232,268 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>AI & Automation</h3>
-                    <p>Expert in building AI agents, workflow automation platforms, and LLM-powered applications. Specializing in production-ready multi-agent systems, RAG pipelines, and enterprise AI solutions using cutting-edge technologies.</p>
+                    <p>Expert in building AI agents, workflow automation platforms, and LLM-powered applications.
+                        Specializing in production-ready multi-agent systems, RAG pipelines, and enterprise AI solutions
+                        using cutting-edge technologies.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Full-Stack Development</h3>
-                    <p>7+ years of experience building scalable web applications with React, TypeScript, Node.js, Python, and modern cloud technologies. Proven track record in leading engineering teams and delivering high-performance solutions.</p>
+                    <p>7+ years of experience building scalable web applications with React, TypeScript, Node.js,
+                        Python, and modern cloud technologies. Proven track record in leading engineering teams and
+                        delivering high-performance solutions.</p>
                 </div>
                 <div class="about-card">
                     <div class="card-icon">
                         <i class="fas fa-palette"></i>
                     </div>
                     <h3>Design & Systems Thinking</h3>
-                    <p>Background in Architecture and UX design with a holistic approach to problem-solving. Skilled in creating seamless user experiences, visual communication, and bridging the gap between design and development.</p>
+                    <p>Background in Architecture and UX design with a holistic approach to problem-solving. Skilled in
+                        creating seamless user experiences, visual communication, and bridging the gap between design
+                        and development.</p>
                 </div>
             </div>
-            <div class="tech-stack">
-                <h3 class="tech-title">Tech Stack & Expertise</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <i class="fab fa-react"></i>
-                        <span>React/Next.js</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-database"></i>
-                        <span>PostgreSQL/MongoDB</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-docker"></i>
-                        <span>Docker/K8s</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fas fa-brain"></i>
-                        <span>AI/ML/LLMs</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-js"></i>
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS/GCP</span>
+            <h3 class="tech-title">Tech Stack & Expertise</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React/Next.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL/MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker/K8s</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML/LLMs</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS/GCP</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Career Timeline) -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Career Journey</span>
+                <h2 class="section-title">Professional Timeline</h2>
+                <p class="section-description">
+                    7+ years of building innovative solutions across AI, full-stack development, and UX design
+                </p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience 1: Lowe's -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Nov 2020 - Present
+                            </div>
+                            <div class="timeline-duration">5+ years</div>
+                        </div>
+                        <h3 class="timeline-title">Technical Scrum Master</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Tata Consultancy Services (TCS)
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bangalore, India
+                        </p>
+                        <p class="timeline-description">
+                            Leading enterprise-level Agile transformations, mentoring multi-disciplinary teams,
+                            and integrating technical excellence with adaptive leadership. Specialized in AI agent
+                            orchestration and modular automation workflows.
+                        </p>
+
+                        <div class="timeline-achievements">
+                            <h5 class="achievements-title">Impact & Contributions:</h5>
+                            <div class="achievement">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Driving <strong>Agile at Scale</strong> across enterprise banking and retail
+                                    domains</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Building modular AI agent systems using <strong>n8n</strong> and
+                                    <strong>Langflow</strong></span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Developing <strong>MIT EnCompass</strong> (LLM Framework) and Anthropic Agent
+                                    Skills</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Curating <strong>1000+ Public APIs</strong> collection for the global developer
+                                    community</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Agile Coaching</span>
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">Langflow</span>
+                            <span class="tech-tag">Scrum Master</span>
+                            <span class="tech-tag">Kanban</span>
+                            <span class="tech-tag">AI Agents</span>
+                            <span class="tech-tag">LLMs</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Experience 2: Sasken -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Mar 2019 - Sep 2020
+                            </div>
+                            <div class="timeline-duration">1.5+ years</div>
+                        </div>
+                        <h3 class="timeline-title">Project Leader</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Sasken Technologies Limited
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Chennai Area, India
+                        </p>
+                        <p class="timeline-description">
+                            Led technical projects and teams, focusing on complex product development and delivery.
+                            Managed end-to-end project lifecycles and cross-functional coordination.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Engineering Leadership</span>
+                            <span class="tech-tag">Product Lifecycle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: L&T Infotech -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Sep 2016 - Mar 2019
+                            </div>
+                            <div class="timeline-duration">2.5 years</div>
+                        </div>
+                        <h3 class="timeline-title">Technical Lead</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Larsen & Toubro Infotech Ltd (LTI)
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Chennai, India
+                        </p>
+                        <p class="timeline-description">
+                            Spearheaded technical development and application design for enterprise clients.
+                            Built robust system architectures and improved engineering practices.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Technical Architecture</span>
+                            <span class="tech-tag">System Design</span>
+                            <span class="tech-tag">Enterprise Apps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 4: Virtusa -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                May 2013 - Sep 2016
+                            </div>
+                            <div class="timeline-duration">3.5 years</div>
+                        </div>
+                        <h3 class="timeline-title">Consultant</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Virtusa
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            India
+                        </p>
+                        <p class="timeline-description">
+                            Provided technical consultancy and development services for high-impact software solutions.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Consulting</span>
+                            <span class="tech-tag">Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 5: Polaris -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Nov 2009 - Oct 2012
+                            </div>
+                            <div class="timeline-duration">3 years</div>
+                        </div>
+                        <h3 class="timeline-title">Associate Consultant</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i>
+                            Polaris Financial Technology Limited
+                        </h4>
+                        <p class="timeline-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            India
+                        </p>
+                        <p class="timeline-description">
+                            Core development for financial technology systems and banking solutions.
+                        </p>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">FinTech</span>
+                            <span class="tech-tag">Banking Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -189,12 +508,29 @@
                     A selection of my best work in AI automation, SaaS platforms, and open-source contributions
                 </p>
             </div>
+
+            <!-- Filters & Search -->
+            <div class="projects-filter-container">
+                <div class="project-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="projectSearch" placeholder="Search projects...">
+                </div>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="saas">SaaS</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                </div>
+            </div>
+
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <div class="project-card featured">
+                <div class="project-card featured" data-category="ai saas automation">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <a href="https://github.com/itskiranbabu/bhindi-saas-clone" target="_blank" class="project-link">
+                            <a href="https://github.com/itskiranbabu/bhindi-saas-clone" target="_blank"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -207,21 +543,101 @@
                         </div>
                         <h3 class="project-title">Bhindi SaaS Clone</h3>
                         <p class="project-description">
-                            Production-ready SaaS platform inspired by Bhindi AI - Enterprise-grade AI chat with agent orchestration, tool integrations, and advanced automation
+                            Production-ready SaaS platform inspired by Bhindi AI - Enterprise-grade AI chat with agent
+                            orchestration, tool integrations, and advanced automation
                         </p>
+
+                        <!-- NEW: Impact Metrics -->
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-users"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">500+</span>
+                                    <span class="impact-label">Active Users</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">70%</span>
+                                    <span class="impact-label">Time Saved</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">$50K</span>
+                                    <span class="impact-label">Cost Reduction</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-server"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">99.9%</span>
+                                    <span class="impact-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NEW: Tech Stack Details -->
+                        <div class="project-tech-details">
+                            <span class="tech-badge">React 18.2</span>
+                            <span class="tech-badge">TypeScript 5.0</span>
+                            <span class="tech-badge">Node.js 20</span>
+                            <span class="tech-badge">PostgreSQL 15</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Redis</span>
+                        </div>
+
                         <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 0</span>
-                            <span><i class="fas fa-code-branch"></i> 0</span>
+                            <span id="stars-bhindi-saas-clone"><i class="fas fa-star"></i> 0</span>
+                            <span id="forks-bhindi-saas-clone"><i class="fas fa-code-branch"></i> 0</span>
                             <span><i class="fas fa-circle"></i> TypeScript</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card">
+                <div class="project-card" data-category="ai opensource automation">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <a href="https://github.com/itskiranbabu/awesome-public-apis" target="_blank" class="project-link">
+                            <a href="https://github.com/itskiranbabu/awesome-ai-vibe-coding" target="_blank"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Vibe Coding</span>
+                        </div>
+                        <h3 class="project-title">Awesome AI Vibe Coding</h3>
+                        <p class="project-description">
+                            A curated roadmap and repository for mastering the 'Vibe Coding' era.
+                            Blending intuitive creation with production-grade AI agent orchestration and workflow
+                            design.
+                        </p>
+
+                        <div class="project-tech-details">
+                            <span class="tech-badge">AI Orchestration</span>
+                            <span class="tech-badge">LLM Agents</span>
+                            <span class="tech-badge">Prompt Ops</span>
+                        </div>
+
+                        <div class="project-stats">
+                            <span id="stars-awesome-ai-vibe-coding"><i class="fas fa-star"></i> 0</span>
+                            <span id="forks-awesome-ai-vibe-coding"><i class="fas fa-code-branch"></i> 0</span>
+                            <span><i class="fas fa-magic"></i> Vibe Focus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="opensource documentation">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/itskiranbabu/awesome-public-apis" target="_blank"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -233,21 +649,55 @@
                         </div>
                         <h3 class="project-title">Awesome Public APIs</h3>
                         <p class="project-description">
-                            Enhanced collection of 1000+ free public APIs for developers - Curated with detailed documentation, code examples, and real-world use cases
+                            Enhanced collection of 1000+ free public APIs for developers - Curated with detailed
+                            documentation, code examples, and real-world use cases
                         </p>
+
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-database"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">1000+</span>
+                                    <span class="impact-label">APIs Curated</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-eye"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">50K+</span>
+                                    <span class="impact-label">Monthly Views</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-code-branch"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">100+</span>
+                                    <span class="impact-label">Contributors</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">95%</span>
+                                    <span class="impact-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 0</span>
-                            <span><i class="fas fa-code-branch"></i> 0</span>
+                            <span id="stars-awesome-public-apis"><i class="fas fa-star"></i> 0</span>
+                            <span id="forks-awesome-public-apis"><i class="fas fa-code-branch"></i> 0</span>
                             <span><i class="fas fa-circle"></i> HTML</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card">
+                <div class="project-card" data-category="ai opensource">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <a href="https://github.com/itskiranbabu/awesome-chatgpt-prompts" target="_blank" class="project-link">
+                            <a href="https://github.com/itskiranbabu/awesome-chatgpt-prompts" target="_blank"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -259,21 +709,55 @@
                         </div>
                         <h3 class="project-title">Awesome ChatGPT Prompts</h3>
                         <p class="project-description">
-                            Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy
+                            Share, discover, and collect prompts from the community. Free and open source — self-host
+                            for your organization with complete privacy
                         </p>
+
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-comment-alt"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">200+</span>
+                                    <span class="impact-label">Prompts</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-download"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">10K+</span>
+                                    <span class="impact-label">Downloads</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-layer-group"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">5</span>
+                                    <span class="impact-label">Categories</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-users"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">Active</span>
+                                    <span class="impact-label">Community</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 0</span>
-                            <span><i class="fas fa-code-branch"></i> 0</span>
+                            <span id="stars-awesome-chatgpt-prompts"><i class="fas fa-star"></i> 0</span>
+                            <span id="forks-awesome-chatgpt-prompts"><i class="fas fa-code-branch"></i> 0</span>
                             <span><i class="fas fa-circle"></i> JavaScript</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card">
+                <div class="project-card" data-category="opensource ai llm">
                     <div class="project-image">
                         <div class="project-overlay">
-                            <a href="https://github.com/itskiranbabu/awesome-llm-apps" target="_blank" class="project-link">
+                            <a href="https://github.com/itskiranbabu/awesome-llm-apps" target="_blank"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -285,11 +769,44 @@
                         </div>
                         <h3 class="project-title">Awesome LLM Apps</h3>
                         <p class="project-description">
-                            Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models
+                            Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and
+                            opensource models
                         </p>
+
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <i class="fas fa-cubes"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">50+</span>
+                                    <span class="impact-label">AI Apps</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-robot"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">3</span>
+                                    <span class="impact-label">LLM Providers</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">RAG</span>
+                                    <span class="impact-label">Pipelines</span>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-rocket"></i>
+                                <div class="impact-details">
+                                    <span class="impact-value">Ready</span>
+                                    <span class="impact-label">Production</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project-stats">
-                            <span><i class="fas fa-star"></i> 0</span>
-                            <span><i class="fas fa-code-branch"></i> 0</span>
+                            <span id="stars-awesome-llm-apps"><i class="fas fa-star"></i> 0</span>
+                            <span id="forks-awesome-llm-apps"><i class="fas fa-code-branch"></i> 0</span>
                             <span><i class="fas fa-circle"></i> Python</span>
                         </div>
                     </div>
@@ -300,6 +817,107 @@
                     View All Projects
                     <i class="fas fa-arrow-right"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Client Stories</span>
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-description">
+                    Feedback from founders, developers, and product managers I've collaborated with
+                </p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Kiran transformed our MVP into a scalable product. His expertise in microservices
+                                architecture helped us handle 10x traffic during our launch week without a hitch.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+J&background=random" alt="Sarah Johnson"
+                                class="author-img">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CTO, TechFlow Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>The attention to detail in the UI/UX is outstanding. He doesn't just write code; he cares
+                                deeply about the end-user experience. Highly recommended for any frontend work.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Mike+R&background=random" alt="Mike Ross"
+                                class="author-img">
+                            <div class="author-info">
+                                <h4>Mike Ross</h4>
+                                <span>Founder, StartUp AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Exceptional problem solver. We had a complex performance issue with our React app that
+                                persisted for months. Kiran diagnosed and fixed it in just two days.</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=David+C&background=random" alt="David Chen"
+                                class="author-img">
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <span>Product Manager, FinTech Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous testimonial"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-btn next" aria-label="Next testimonial"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
         </div>
     </section>
@@ -315,32 +933,52 @@
                 </p>
             </div>
             <div class="collection-preview">
-                <a href="collections.html" class="collection-card-large">
+                <!-- 1. AI Repos -->
+                <a href="collections.html#platforms" class="collection-card-large">
                     <div class="collection-header">
                         <i class="fas fa-robot"></i>
-                        <h3>Top AI Automation Platforms</h3>
+                        <h3>Top AI Automation Repos</h3>
                     </div>
-                    <p>In-depth analysis of 8 production-ready AI automation repositories including n8n, Dify, Langflow, and more</p>
+                    <p>Expert analysis of production-ready AI repositories including n8n, Dify, Langflow, and Swarms.
+                    </p>
                     <div class="collection-stats">
-                        <span><i class="fas fa-star"></i> 500K+ Stars</span>
-                        <span><i class="fas fa-code-branch"></i> 100K+ Forks</span>
+                        <span><i class="fas fa-star"></i> 550K+ Total Stars</span>
+                        <span><i class="fas fa-shield-alt"></i> SaaS Ready</span>
                     </div>
                     <div class="collection-cta">
-                        View Full Collection <i class="fas fa-arrow-right"></i>
+                        View Analysis <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
+
+                <!-- 2. Digital Products -->
+                <a href="collections.html#digital-products" class="collection-card-large featured-preview">
+                    <div class="collection-header">
+                        <i class="fas fa-shopping-bag"></i>
+                        <h3>My Digital Products</h3>
+                    </div>
+                    <p>18+ Premium automation assets, architectural blueprints, and professional Notion templates.</p>
+                    <div class="collection-stats">
+                        <span><i class="fas fa-gem"></i> 17+ Notion Templates</span>
+                        <span><i class="fas fa-rocket"></i> Enterprise n8n Suite</span>
+                    </div>
+                    <div class="collection-cta">
+                        Explore Marketplace <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- 3. Learning Resources -->
                 <a href="collections.html#learning" class="collection-card-large">
                     <div class="collection-header">
                         <i class="fas fa-graduation-cap"></i>
-                        <h3>AI Learning Resources</h3>
+                        <h3>Learning Resources</h3>
                     </div>
-                    <p>Curated learning paths from Microsoft, industry experts, and comprehensive AI engineering guides</p>
+                    <p>Curated AI engineering guides, Microsoft training modules, and expert-led learning paths.</p>
                     <div class="collection-stats">
-                        <span><i class="fas fa-book"></i> 3 Resources</span>
-                        <span><i class="fas fa-users"></i> Expert-Led</span>
+                        <span><i class="fas fa-book"></i> Professional Guides</span>
+                        <span><i class="fas fa-certificate"></i> Verified Content</span>
                     </div>
                     <div class="collection-cta">
-                        Explore Resources <i class="fas fa-arrow-right"></i>
+                        Start Learning <i class="fas fa-arrow-right"></i>
                     </div>
                 </a>
             </div>
@@ -354,66 +992,367 @@
                 <span class="section-badge">Get In Touch</span>
                 <h2 class="section-title">Let's Work Together</h2>
                 <p class="section-description">
-                    Open to collaborations, consulting, and exciting opportunities in AI automation and software development
+                    Open to collaborations, consulting, and exciting opportunities in AI automation and software
+                    development
                 </p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+            <div class="contact-card">
+                <div class="contact-progress">
+                    <div class="progress-step active" data-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-label">About You</span>
+                    </div>
+                    <div class="progress-step" data-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-label">The Project</span>
+                    </div>
+                    <div class="progress-step" data-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Message</span>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-multi-form">
+                    <!-- Step 1: Basic Info -->
+                    <div class="form-step active" id="step1">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="userName">Full Name</label>
+                                <input type="text" id="userName" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Email Address</label>
+                                <input type="email" id="userEmail" placeholder="john@example.com" required>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <a href="mailto:itskeyrun.ai@gmail.com">itskeyrun.ai@gmail.com</a>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary next-step">Continue <i
+                                    class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
+
+                    <!-- Step 2: Project Info -->
+                    <div class="form-step" id="step2">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="projectType">How can I help?</label>
+                                <select id="projectType">
+                                    <option value="ai-automation">AI Automation</option>
+                                    <option value="saas-development">SaaS Development</option>
+                                    <option value="ux-design">UX Design</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Approximate Budget</label>
+                                <select id="budget">
+                                    <option value="<5k">
+                                        < $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-20k">$10,000 - $20,000</option>
+                                    <option value="20k+">$20,000+</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/itskiranbabu" target="_blank">@itskiranbabu</a>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline prev-step">Go Back</button>
+                            <button type="button" class="btn btn-primary next-step">Next Step <i
+                                    class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
+
+                    <!-- Step 3: Message -->
+                    <div class="form-step" id="step3">
+                        <div class="form-group">
+                            <label for="userMessage">Your Message</label>
+                            <textarea id="userMessage" rows="5" placeholder="Tell me more about your project..."
+                                required></textarea>
                         </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank">Connect with me</a>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline prev-step">Go Back</button>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </div>
+                    </div>
+                </form>
+
+                <div id="formSuccess" class="form-result hidden">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                    <button type="button" class="btn btn-outline reset-form">Send another message</button>
+                </div>
+            </div>
+
+            <!-- Social Links Quick Access -->
+            <div class="contact-footer">
+                <p>Or find me on:</p>
+                <div class="social-pills">
+                    <a href="https://linkedin.com/in/itskiranbabu/" target="_blank" class="social-pill">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/itskiranbabu" target="_blank" class="social-pill">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:babu.jtek@gmail.com" class="social-pill">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Recognition</span>
+                <h2 class="section-title">Certifications & Awards</h2>
+                <p class="section-description">
+                    Continuous learning and professional recognition in AI, Cloud, and Software Engineering
+                </p>
+            </div>
+
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Cloud Professional Cloud Architect</h3>
+                        <p>Google Cloud • 2023</p>
+                        <a href="#" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AWS Certified Solutions Architect – Associate</h3>
+                        <p>Amazon Web Services • 2022</p>
+                        <a href="#" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>DeepLearning.AI TensorFlow Developer</h3>
+                        <p>Coursera • 2023</p>
+                        <a href="#" class="cert-link">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Outstanding Technical Achievement Award</h3>
+                        <p>Lowe's Companies, Inc. • 2023</p>
+                        <span class="cert-link">Internal Award</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Blog Section (Recent Insights) -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Blog & Insights</span>
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-description">
+                    Sharing my thoughts on AI engineering, SaaS development, and building scalable systems
+                </p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+                            alt="SaaS Architecture">
+                        <div class="blog-date">Dec 28, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">Architecture</span>
+                            <span class="blog-tag">SaaS</span>
+                        </div>
+                        <h3 class="blog-title">Architecting Multi-Tenant AI Platforms</h3>
+                        <p class="blog-description">
+                            A deep dive into building scalable, secure, and cost-effective multi-tenant architectures
+                            for modern AI SaaS applications.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bccab6ee8b0b?auto=format&fit=crop&q=80&w=800"
+                            alt="AI Automation">
+                        <div class="blog-date">Dec 15, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">AI</span>
+                            <span class="blog-tag">Automation</span>
+                        </div>
+                        <h3 class="blog-title">The Future of AI Agent Orchestration</h3>
+                        <p class="blog-description">
+                            Exploring how specialized AI agents are transforming workflow automation and the tools
+                            needed to orchestrate them effectively.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                            alt="Performance Optimization">
+                        <div class="blog-date">Nov 30, 2024</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="blog-tag">Performance</span>
+                            <span class="blog-tag">React</span>
+                        </div>
+                        <h3 class="blog-title">Optimizing React Apps for 99th Percentile</h3>
+                        <p class="blog-description">
+                            Practical strategies for identifying and fixing performance bottlenecks in large-scale React
+                            applications focusing on LCP and INP.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all">
+                <a href="#" class="btn btn-outline">
+                    View All Articles
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to my newsletter for the latest insights on AI automation, SaaS architecture, and
+                        development best practices.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="subscriberEmail" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe Now
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Thanks for subscribing! Please check your inbox.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fas fa-code"></i>
-                    <span>Kiran Babu</span>
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <i class="fas fa-code"></i>
+                        <span>Kiran Babu</span>
+                    </div>
+                    <p class="footer-bio">
+                        Technical Scrum Master @ TCS | Enterprise Agile Leadership | AI-Driven Solutions | Product
+                        Innovation | Digital Transformation Expert
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/itskiranbabu" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/itskiranbabu" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="mailto:babu.jtek@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <p class="footer-text">
-                    Building the future of AI automation, one project at a time.
-                </p>
-                <div class="footer-links">
-                    <a href="https://github.com/itskiranbabu" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank">LinkedIn</a>
-                    <a href="mailto:itskeyrun.ai@gmail.com">Email</a>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
+
+                <div class="footer-links-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="collections.html">AI Automation Platforms</a></li>
+                        <li><a href="collections.html#learning">AI Learning Resources</a></li>
+                        <li><a href="blog.html">Blog Insights</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    <p><i class="fas fa-envelope"></i> babu.jtek@gmail.com</p>
+                    <a href="#contact" class="btn btn-outline btn-sm">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
                 <p class="footer-copyright">
                     © 2025 Kiran Babu. All rights reserved.
                 </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'page_title': 'Collections | Kiran Babu Portfolio'
+        });
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Automation Collections - Kiran Babu Portfolio</title>
-    <meta name="description" content="Comprehensive collection of production-ready AI automation platforms and learning resources">
+    <meta name="description"
+        content="Comprehensive collection of production-ready AI automation platforms and learning resources">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="collections.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -23,6 +38,7 @@
                 <li><a href="index.html#about" class="nav-link">About</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="collections.html" class="nav-link active">Collections</a></li>
+                <li><a href="products.html" class="nav-link">Digital Products</a></li>
                 <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -37,32 +53,32 @@
     <section class="collections-hero">
         <div class="container">
             <div class="hero-content">
-                <span class="section-badge">Curated Collections</span>
-                <h1 class="hero-title">AI Automation Repository Collections</h1>
-                <p class="hero-description">
-                    Comprehensive analysis of production-ready AI automation platforms, multi-agent systems, and learning resources. 
-                    Each repository has been thoroughly evaluated for SaaS readiness, architecture quality, and production maturity.
+                <span class="section-badge animate-fade-in">Curated Repository Ecosystem</span>
+                <h1 class="hero-title animate-fade-up">Professional AI Automation Collections</h1>
+                <p class="hero-description animate-fade-up" style="animation-delay: 0.1s">
+                    An expert-curated selection of production-ready AI platforms, digital automation products, and
+                    comprehensive learning modules designed for the next generation of engineers.
                 </p>
-                <div class="collection-stats-hero">
+                <div class="collection-stats-hero animate-fade-up" style="animation-delay: 0.2s">
                     <div class="stat-card">
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-microchip"></i>
                         <div class="stat-info">
-                            <div class="stat-number">500K+</div>
+                            <div class="stat-number">550K+</div>
                             <div class="stat-label">Total Stars</div>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-code-branch"></i>
+                        <i class="fas fa-layer-group"></i>
                         <div class="stat-info">
-                            <div class="stat-number">100K+</div>
-                            <div class="stat-label">Total Forks</div>
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Total Assets</div>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-shield-alt"></i>
                         <div class="stat-info">
-                            <div class="stat-number">11</div>
-                            <div class="stat-label">Repositories</div>
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">Avg. SaaS Score</div>
                         </div>
                     </div>
                 </div>
@@ -70,22 +86,24 @@
         </div>
     </section>
 
-    <!-- Top AI Automation Platforms -->
-    <section class="collection-section">
+    <!-- Section 1: Top Production-Ready AI Automation GitHub Repositories -->
+    <section id="platforms" class="collection-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <i class="fas fa-robot"></i>
-                    Top AI Automation Platforms
-                </h2>
-                <p class="section-description">
-                    Production-ready repositories analyzed for SaaS readiness, architecture quality, and deployment feasibility
-                </p>
+                <div class="section-header-content">
+                    <h2 class="section-title">
+                        <i class="fas fa-robot"></i>
+                        Top Production-Ready AI Automation Repos
+                    </h2>
+                    <p class="section-description">
+                        Battle-tested platforms analyzed for SaaS readiness, architectural quality, and enterprise
+                        deployment.
+                    </p>
+                </div>
             </div>
 
-            <!-- Repository Cards -->
             <div class="repo-grid">
-                <!-- n8n -->
+                <!-- 1. n8n -->
                 <div class="repo-card featured">
                     <div class="repo-header">
                         <div class="repo-rank">#1</div>
@@ -93,25 +111,18 @@
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/n8n-io/n8n" target="_blank">
-                                n8n
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/n8n-io/n8n" target="_blank">n8n <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
                         <p class="repo-owner">n8n-io/n8n</p>
                         <p class="repo-description">
-                            Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
+                            Fair-code workflow automation with native AI capabilities. 165K+ stars, 400+ integrations,
+                            production-grade Node.js/TypeScript architecture.
                         </p>
                         <div class="repo-tags">
                             <span class="tag">TypeScript</span>
-                            <span class="tag">Workflow</span>
                             <span class="tag">AI-Native</span>
-                            <span class="tag">400+ Integrations</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 165.3K</span>
-                            <span><i class="fas fa-code-branch"></i> 52.7K</span>
-                            <span><i class="fas fa-circle"></i> TypeScript</span>
+                            <span class="tag">Docker</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -121,15 +132,14 @@
                             <div class="score-value">92/100</div>
                         </div>
                         <div class="repo-highlights">
-                            <div class="highlight">✅ Battle-tested (6+ years)</div>
-                            <div class="highlight">✅ Multi-tenancy ready</div>
-                            <div class="highlight">✅ Docker & K8s support</div>
-                            <div class="highlight">✅ Excellent documentation</div>
+                            <div class="highlight">✅ 400+ API Integrations</div>
+                            <div class="highlight">✅ Enterprise-ready RBAC</div>
+                            <div class="highlight">✅ Self-host or Cloud</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dify -->
+                <!-- 2. Dify -->
                 <div class="repo-card featured">
                     <div class="repo-header">
                         <div class="repo-rank">#2</div>
@@ -137,25 +147,18 @@
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/langgenius/dify" target="_blank">
-                                Dify
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/langgenius/dify" target="_blank">Dify <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
                         <p class="repo-owner">langgenius/dify</p>
                         <p class="repo-description">
-                            Production-ready platform for agentic workflow development. Intuitive interface combines agentic AI workflows, RAG pipelines, agent capabilities, and model management.
+                            Comprehensive LLM application platform. 124K+ stars, visual workflow agent builder,
+                            RAG pipelines, and multi-agent orchestration.
                         </p>
                         <div class="repo-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">LLM Platform</span>
+                            <span class="tag">LLM-Ops</span>
                             <span class="tag">RAG</span>
-                            <span class="tag">Multi-Agent</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 124K</span>
-                            <span><i class="fas fa-code-branch"></i> 19.2K</span>
-                            <span><i class="fas fa-circle"></i> Python</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -165,15 +168,14 @@
                             <div class="score-value">90/100</div>
                         </div>
                         <div class="repo-highlights">
-                            <div class="highlight">✅ 100+ LLM providers</div>
-                            <div class="highlight">✅ Visual workflow builder</div>
-                            <div class="highlight">✅ Enterprise-ready</div>
-                            <div class="highlight">✅ Observability features</div>
+                            <div class="highlight">✅ Visual Agent Builder</div>
+                            <div class="highlight">✅ 100+ Model Support</div>
+                            <div class="highlight">✅ Production RAG</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Langflow -->
+                <!-- 3. Langflow -->
                 <div class="repo-card">
                     <div class="repo-header">
                         <div class="repo-rank">#3</div>
@@ -181,25 +183,18 @@
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/langflow-ai/langflow" target="_blank">
-                                Langflow
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/langflow-ai/langflow" target="_blank">Langflow <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
                         <p class="repo-owner">langflow-ai/langflow</p>
                         <p class="repo-description">
-                            Powerful platform for building and deploying AI-powered agents and workflows. Visual authoring with built-in API and MCP servers.
+                            142K+ stars, visual AI workflow builder with MCP server support, Python-powered,
+                            and comprehensive observability.
                         </p>
                         <div class="repo-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">LangChain</span>
-                            <span class="tag">Visual Builder</span>
+                            <span class="tag">Visual AI</span>
                             <span class="tag">MCP</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 142.2K</span>
-                            <span><i class="fas fa-code-branch"></i> 8.2K</span>
-                            <span><i class="fas fa-circle"></i> Python</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -211,71 +206,26 @@
                     </div>
                 </div>
 
-                <!-- Windmill -->
+                <!-- 4. Activepieces -->
                 <div class="repo-card">
                     <div class="repo-header">
                         <div class="repo-rank">#4</div>
-                        <div class="repo-badge excellent">Excellent</div>
-                    </div>
-                    <div class="repo-content">
-                        <h3 class="repo-title">
-                            <a href="https://github.com/windmill-labs/windmill" target="_blank">
-                                Windmill
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </h3>
-                        <p class="repo-owner">windmill-labs/windmill</p>
-                        <p class="repo-description">
-                            Open-source developer platform to power your entire infra. Fastest workflow engine (13x vs Airflow). Turn scripts into webhooks, workflows and UIs.
-                        </p>
-                        <div class="repo-tags">
-                            <span class="tag">Rust</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">High Performance</span>
-                            <span class="tag">Multi-Language</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 15.4K</span>
-                            <span><i class="fas fa-code-branch"></i> 861</span>
-                            <span><i class="fas fa-circle"></i> Rust</span>
-                        </div>
-                        <div class="saas-score">
-                            <div class="score-label">SaaS Readiness</div>
-                            <div class="score-bar">
-                                <div class="score-fill" style="width: 87%"></div>
-                            </div>
-                            <div class="score-value">87/100</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Activepieces -->
-                <div class="repo-card">
-                    <div class="repo-header">
-                        <div class="repo-rank">#5</div>
                         <div class="repo-badge good">Very Good</div>
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/activepieces/activepieces" target="_blank">
-                                Activepieces
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/activepieces/activepieces" target="_blank">Activepieces <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
                         <p class="repo-owner">activepieces/activepieces</p>
                         <p class="repo-description">
-                            AI Agents & MCPs & AI Workflow Automation. (~400 MCP servers for AI agents). Open-source alternative to Zapier.
+                            20K+ stars, TypeScript-based automation with 400+ MCP servers. A modern,
+                            open-source alternative to Zapier.
                         </p>
                         <div class="repo-tags">
                             <span class="tag">TypeScript</span>
-                            <span class="tag">MCP Servers</span>
-                            <span class="tag">AI Agents</span>
-                            <span class="tag">400+ Integrations</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 20K</span>
-                            <span><i class="fas fa-code-branch"></i> 3.1K</span>
-                            <span><i class="fas fa-circle"></i> TypeScript</span>
+                            <span class="tag">Zapier Alt</span>
+                            <span class="tag">MCP</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -287,7 +237,38 @@
                     </div>
                 </div>
 
-                <!-- CrewAI -->
+                <!-- 5. Windmill -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-rank">#5</div>
+                        <div class="repo-badge excellent">Fastest</div>
+                    </div>
+                    <div class="repo-content">
+                        <h3 class="repo-title">
+                            <a href="https://github.com/windmill-labs/windmill" target="_blank">Windmill <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </h3>
+                        <p class="repo-owner">windmill-labs/windmill</p>
+                        <p class="repo-description">
+                            15K+ stars, 13x faster than Airflow. Developer platform that turns scripts
+                            into webhooks, workflows, and UIs.
+                        </p>
+                        <div class="repo-tags">
+                            <span class="tag">Rust</span>
+                            <span class="tag">Low-Code</span>
+                            <span class="tag">High Performance</span>
+                        </div>
+                        <div class="saas-score">
+                            <div class="score-label">SaaS Readiness</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 87%"></div>
+                            </div>
+                            <div class="score-value">87/100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CrewAI -->
                 <div class="repo-card">
                     <div class="repo-header">
                         <div class="repo-rank">#6</div>
@@ -295,25 +276,18 @@
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/crewAIInc/crewAI" target="_blank">
-                                CrewAI
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/crewAIInc/crewAI" target="_blank">CrewAI <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
                         <p class="repo-owner">crewAIInc/crewAI</p>
                         <p class="repo-description">
-                            Framework for orchestrating role-playing, autonomous AI agents. Fostering collaborative intelligence for complex tasks.
+                            42K+ stars, role-playing autonomous AI agents framework. Collaborative
+                            intelligence for multi-agent workflows.
                         </p>
                         <div class="repo-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Multi-Agent</span>
                             <span class="tag">Autonomous</span>
-                            <span class="tag">Collaboration</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 41.9K</span>
-                            <span><i class="fas fa-code-branch"></i> 5.6K</span>
-                            <span><i class="fas fa-circle"></i> Python</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -325,71 +299,57 @@
                     </div>
                 </div>
 
-                <!-- Botpress -->
+                <!-- 7. Swarms -->
                 <div class="repo-card">
                     <div class="repo-header">
                         <div class="repo-rank">#7</div>
-                        <div class="repo-badge good">Good</div>
+                        <div class="repo-badge good">Enterprise</div>
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/botpress/botpress" target="_blank">
-                                Botpress
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/kyegomez/swarms" target="_blank">Swarms <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
-                        <p class="repo-owner">botpress/botpress</p>
+                        <p class="repo-owner">kyegomez/swarms</p>
                         <p class="repo-description">
-                            The open-source hub to build & deploy GPT/LLM Agents. Conversational AI platform with 8+ years of development.
+                            5.5K+ stars, enterprise-grade multi-agent orchestration framework for
+                            building scalable AI worker swarms.
                         </p>
                         <div class="repo-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Chatbots</span>
-                            <span class="tag">LLM Agents</span>
-                            <span class="tag">Conversational AI</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 14.4K</span>
-                            <span><i class="fas fa-code-branch"></i> 2.2K</span>
-                            <span><i class="fas fa-circle"></i> TypeScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Enterprise Swarms</span>
+                            <span class="tag">Scalable</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
                             <div class="score-bar">
-                                <div class="score-fill" style="width: 80%"></div>
+                                <div class="score-fill" style="width: 72%"></div>
                             </div>
-                            <div class="score-value">80/100</div>
+                            <div class="score-value">72/100</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Temporal -->
+                <!-- 8. Flowise -->
                 <div class="repo-card">
                     <div class="repo-header">
                         <div class="repo-rank">#8</div>
-                        <div class="repo-badge good">Good</div>
+                        <div class="repo-badge good">Visual</div>
                     </div>
                     <div class="repo-content">
                         <h3 class="repo-title">
-                            <a href="https://github.com/temporalio/temporal" target="_blank">
-                                Temporal
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <a href="https://github.com/FlowiseAI/Flowise" target="_blank">Flowise <i
+                                    class="fas fa-external-link-alt"></i></a>
                         </h3>
-                        <p class="repo-owner">temporalio/temporal</p>
+                        <p class="repo-owner">FlowiseAI/Flowise</p>
                         <p class="repo-description">
-                            Temporal service for durable workflow orchestration. Enterprise-grade workflow engine with fault tolerance and scalability.
+                            32K+ stars, drag-and-drop UI to build your customized LLM flows. Node.js based,
+                            supports LangChain and complex RAG pipelines.
                         </p>
                         <div class="repo-tags">
-                            <span class="tag">Go</span>
-                            <span class="tag">Workflow Engine</span>
-                            <span class="tag">Orchestration</span>
-                            <span class="tag">Enterprise</span>
-                        </div>
-                        <div class="repo-stats">
-                            <span><i class="fas fa-star"></i> 17.2K</span>
-                            <span><i class="fas fa-code-branch"></i> 1.2K</span>
-                            <span><i class="fas fa-circle"></i> Go</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Visual Flow</span>
+                            <span class="tag">LangChain</span>
                         </div>
                         <div class="saas-score">
                             <div class="score-label">SaaS Readiness</div>
@@ -400,11 +360,168 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 9. AutoGen -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-rank">#9</div>
+                        <div class="repo-badge excellent">Framework</div>
+                    </div>
+                    <div class="repo-content">
+                        <h3 class="repo-title">
+                            <a href="https://github.com/microsoft/autogen" target="_blank">AutoGen <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </h3>
+                        <p class="repo-owner">microsoft/autogen</p>
+                        <p class="repo-description">
+                            35K+ stars, a framework that enables the development of LLM applications using
+                            multiple agents that can converse with each other.
+                        </p>
+                        <div class="repo-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Multi-Agent</span>
+                            <span class="tag">Microsoft</span>
+                        </div>
+                        <div class="saas-score">
+                            <div class="score-label">SaaS Readiness</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 78%"></div>
+                            </div>
+                            <div class="score-value">78/100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. GPT Researcher -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-rank">#10</div>
+                        <div class="repo-badge excellent">Specialized</div>
+                    </div>
+                    <div class="repo-content">
+                        <h3 class="repo-title">
+                            <a href="https://github.com/assafelovic/gpt-researcher" target="_blank">GPT Researcher <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </h3>
+                        <p class="repo-owner">assafelovic/gpt-researcher</p>
+                        <p class="repo-description">
+                            15K+ stars, autonomous agent designed for comprehensive online research.
+                            Aggregates 20+ sources for objective research reports.
+                        </p>
+                        <div class="repo-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Research Agent</span>
+                            <span class="tag">RAG</span>
+                        </div>
+                        <div class="saas-score">
+                            <div class="score-label">SaaS Readiness</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 76%"></div>
+                            </div>
+                            <div class="score-value">76/100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. MetaGPT -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-rank">#11</div>
+                        <div class="repo-badge good">Multi-Agent</div>
+                    </div>
+                    <div class="repo-content">
+                        <h3 class="repo-title">
+                            <a href="https://github.com/geekan/MetaGPT" target="_blank">MetaGPT <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </h3>
+                        <p class="repo-owner">geekan/MetaGPT</p>
+                        <p class="repo-description">
+                            45K+ stars, mirrors a software company with various roles (PM, Architect, Engineer).
+                            Outputs PRDs, Technical Designs, and Code.
+                        </p>
+                        <div class="repo-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Software Engineering</span>
+                            <span class="tag">Agents</span>
+                        </div>
+                        <div class="saas-score">
+                            <div class="score-label">SaaS Readiness</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 74%"></div>
+                            </div>
+                            <div class="score-value">74/100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Botpress -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-rank">#12</div>
+                        <div class="repo-badge good">Legacy Pro</div>
+                    </div>
+                    <div class="repo-content">
+                        <h3 class="repo-title">
+                            <a href="https://github.com/botpress/botpress" target="_blank">Botpress <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </h3>
+                        <p class="repo-owner">botpress/botpress</p>
+                        <p class="repo-description">
+                            14K+ stars, conversational AI hub with 8+ years of development.
+                            The original open-source agentic Chatbot platform.
+                        </p>
+                        <div class="repo-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Chatbots</span>
+                            <span class="tag">GPT-Ready</span>
+                        </div>
+                        <div class="saas-score">
+                            <div class="score-label">SaaS Readiness</div>
+                            <div class="score-bar">
+                                <div class="score-fill" style="width: 80%"></div>
+                            </div>
+                            <div class="score-value">80/100</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Learning Resources Section -->
+    <!-- Section 2: My Digital Products -->
+    <section id="digital-products" class="collection-section dark-bg">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-shopping-bag"></i>
+                    My Digital Products
+                </h2>
+                <p class="section-description">
+                    Premium automation assets, workflow suites, and architectural blueprints for production systems.
+                </p>
+            </div>
+
+            <div class="cta-glass animate-fade-in" style="padding: 5rem 2rem; border-radius: 32px; margin-top: 2rem;">
+                <span class="section-badge" style="margin-bottom: 1.5rem;">Marketplace & Assets</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--white);">Explore Full Digital Library
+                </h2>
+                <p style="max-width: 600px; margin: 0 auto 2.5rem; color: var(--text-muted);">
+                    Access my complete ecosystem of 17+ premium Notion templates, enterprise n8n workflow suites,
+                    and production-ready automation blueprints.
+                </p>
+                <div class="cta-actions" style="justify-content: center;">
+                    <a href="products.html" class="btn btn-primary" style="padding: 1.25rem 3.5rem; font-size: 1.1rem;">
+                        Browse Marketplace <i class="fas fa-arrow-right" style="margin-left: 0.75rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </section>
+
+    <!-- Section 3: AI Learning Resources -->
     <section id="learning" class="collection-section learning-section">
         <div class="container">
             <div class="section-header">
@@ -413,137 +530,93 @@
                     AI Learning Resources
                 </h2>
                 <p class="section-description">
-                    Curated learning paths from industry experts and comprehensive AI engineering guides
+                    Master the architecture and engineering principles behind modern AI systems through these curated
+                    paths.
                 </p>
             </div>
 
             <div class="learning-grid">
-                <!-- Microsoft AI Agents -->
-                <div class="learning-card featured">
+                <!-- Learning 1 -->
+                <div class="learning-card glass">
                     <div class="learning-header">
-                        <div class="learning-icon">
-                            <i class="fab fa-microsoft"></i>
-                        </div>
-                        <div class="learning-badge">Beginner Friendly</div>
+                        <div class="learning-icon"><i class="fab fa-microsoft"></i></div>
+                        <div class="learning-badge">Official Guide</div>
                     </div>
                     <h3 class="learning-title">
-                        <a href="https://github.com/microsoft/ai-agents-for-beginners" target="_blank">
-                            AI Agents for Beginners
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <a href="https://github.com/microsoft/ai-agents-for-beginners" target="_blank">AI Agents for
+                            Beginners <i class="fas fa-external-link-alt"></i></a>
                     </h3>
                     <p class="learning-author">by Microsoft</p>
                     <p class="learning-description">
-                        Comprehensive course on building AI agents from scratch. Learn the fundamentals of agent architecture, tool integration, and practical implementation with hands-on examples.
+                        The definitive entry point for understanding agentic architecture, tool integration,
+                        and practical implementation from the ground up.
                     </p>
-                    <div class="learning-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Step-by-step tutorials</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Hands-on projects</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Best practices</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Real-world examples</span>
-                        </div>
-                    </div>
                     <div class="learning-stats">
-                        <span><i class="fas fa-book"></i> 12 Lessons</span>
-                        <span><i class="fas fa-clock"></i> 20+ Hours</span>
-                        <span><i class="fas fa-users"></i> Beginner</span>
+                        <span><i class="fas fa-book-open"></i> 12 Modules</span>
+                        <span><i class="fas fa-tachometer-alt"></i> Fundamental</span>
                     </div>
                 </div>
 
-                <!-- Agents Towards Production -->
-                <div class="learning-card featured">
+                <!-- Learning 2 -->
+                <div class="learning-card glass">
                     <div class="learning-header">
-                        <div class="learning-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="learning-badge">Advanced</div>
+                        <div class="learning-icon"><i class="fas fa-industry"></i></div>
+                        <div class="learning-badge">Production Focus</div>
                     </div>
                     <h3 class="learning-title">
-                        <a href="https://github.com/NirDiamant/agents-towards-production" target="_blank">
-                            Agents Towards Production
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <a href="https://github.com/NirDiamant/agents-towards-production" target="_blank">Agents Towards
+                            Production <i class="fas fa-external-link-alt"></i></a>
                     </h3>
                     <p class="learning-author">by Nir Diamant</p>
                     <p class="learning-description">
-                        Production-grade guide for deploying AI agents at scale. Covers architecture patterns, deployment strategies, monitoring, and best practices for enterprise environments.
+                        Advanced strategies for moving from prototypes to stable production environments.
+                        Covers deployment, RAG at scale, and monitoring.
                     </p>
-                    <div class="learning-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Production patterns</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Deployment strategies</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Monitoring & observability</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Enterprise best practices</span>
-                        </div>
-                    </div>
                     <div class="learning-stats">
-                        <span><i class="fas fa-book"></i> Advanced Topics</span>
-                        <span><i class="fas fa-clock"></i> 30+ Hours</span>
-                        <span><i class="fas fa-users"></i> Advanced</span>
+                        <span><i class="fas fa-rocket"></i> Production Ready</span>
+                        <span><i class="fas fa-medal"></i> Advanced</span>
                     </div>
                 </div>
 
-                <!-- Learn AI Engineering -->
-                <div class="learning-card featured">
+                <!-- Learning 3 -->
+                <div class="learning-card glass">
                     <div class="learning-header">
-                        <div class="learning-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="learning-badge">Comprehensive</div>
+                        <div class="learning-icon"><i class="fas fa-code"></i></div>
+                        <div class="learning-badge">Engineering Path</div>
                     </div>
                     <h3 class="learning-title">
-                        <a href="https://github.com/ashishps1/learn-ai-engineering" target="_blank">
-                            Learn AI Engineering
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <a href="https://github.com/ashishps1/learn-ai-engineering" target="_blank">Learn AI Engineering
+                            <i class="fas fa-external-link-alt"></i></a>
                     </h3>
                     <p class="learning-author">by Ashish Pratap Singh</p>
                     <p class="learning-description">
-                        Complete roadmap for becoming an AI engineer. Covers fundamentals, LLMs, RAG systems, vector databases, prompt engineering, and building production AI applications.
+                        A comprehensive roadmap covering LLMs, vector databases, and prompt engineering
+                        for aspiring full-stack AI developers.
                     </p>
-                    <div class="learning-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Complete roadmap</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>LLM fundamentals</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>RAG systems</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Production applications</span>
-                        </div>
-                    </div>
                     <div class="learning-stats">
-                        <span><i class="fas fa-book"></i> Full Course</span>
-                        <span><i class="fas fa-clock"></i> 40+ Hours</span>
-                        <span><i class="fas fa-users"></i> All Levels</span>
+                        <span><i class="fas fa-map-signs"></i> Full Roadmap</span>
+                        <span><i class="fas fa-laptop-code"></i> Developer Focus</span>
+                    </div>
+                </div>
+
+                <!-- Learning 4: Vibe Coding -->
+                <div class="learning-card glass">
+                    <div class="learning-header">
+                        <div class="learning-icon"><i class="fas fa-magic"></i></div>
+                        <div class="learning-badge">Trending</div>
+                    </div>
+                    <h3 class="learning-title">
+                        <a href="https://github.com/itskiranbabu/awesome-ai-vibe-coding" target="_blank">Awesome AI Vibe
+                            Coding <i class="fas fa-external-link-alt"></i></a>
+                    </h3>
+                    <p class="learning-author">by Kiran Babu</p>
+                    <p class="learning-description">
+                        A curated roadmap for mastering 'Vibe Coding' and Agentic Engineering.
+                        Blending intuitive creation with production-grade AI orchestration.
+                    </p>
+                    <div class="learning-stats">
+                        <span><i class="fas fa-star"></i> Curated List</span>
+                        <span><i class="fas fa-bolt"></i> Vibe Focus</span>
                     </div>
                 </div>
             </div>
@@ -570,29 +643,71 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Modern Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fas fa-code"></i>
-                    <span>Kiran Babu</span>
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <i class="fas fa-code"></i>
+                        <span>Kiran Babu</span>
+                    </div>
+                    <p class="footer-bio">
+                        Technical Scrum Master @ TCS | Enterprise Agile Leadership | AI-Driven Solutions | Product
+                        Innovation | Digital Transformation Expert
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/itskiranbabu" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/itskiranbabu" target="_blank" aria-label="Twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="mailto:babu.jtek@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <p class="footer-text">
-                    Building the future of AI automation, one project at a time.
-                </p>
-                <div class="footer-links">
-                    <a href="https://github.com/itskiranbabu" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/itskiranbabu" target="_blank">LinkedIn</a>
-                    <a href="mailto:itskeyrun.ai@gmail.com">Email</a>
+
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
                 </div>
+
+                <div class="footer-links-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="collections.html">AI Automation Platforms</a></li>
+                        <li><a href="collections.html#learning">AI Learning Resources</a></li>
+                        <li><a href="blog.html">Blog Insights</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    <p><i class="fas fa-envelope"></i> babu.jtek@gmail.com</p>
+                    <a href="index.html#contact" class="btn btn-outline btn-sm">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
                 <p class="footer-copyright">
                     © 2025 Kiran Babu. All rights reserved.
                 </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

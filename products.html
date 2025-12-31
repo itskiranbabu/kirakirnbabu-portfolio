@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Products | Kiran Babu - AI Automation Expert</title>
+    <meta name="description"
+        content="Premium AI automation assets, n8n workflows, and Notion templates for businesses and creators.">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="collections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            page_path: window.location.pathname,
+        });
+    </script>
+
+    <style>
+        .products-hero {
+            padding: 120px 0 60px;
+            background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+            text-align: center;
+        }
+
+        .products-nav {
+            margin-bottom: 3rem;
+        }
+
+        .nav-pills {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-pill {
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-pill.active,
+        .nav-pill:hover {
+            background: var(--gradient);
+            border-color: transparent;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body class="dark">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Kiran Babu</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="collections.html" class="nav-link">Collections</a></li>
+                <li><a href="products.html" class="nav-link active">Digital Products</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary nav-cta">Let's Talk</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="products-hero">
+        <div class="container text-center">
+            <a href="collections.html" class="back-link animate-fade-in">
+                <i class="fas fa-arrow-left"></i> Back to Collections
+            </a>
+            <span class="section-badge animate-fade-in">Premium Solutions</span>
+            <h1 class="hero-title animate-fade-up">My Digital Products</h1>
+            <p class="hero-description animate-fade-up" style="max-width: 800px; margin: 0 auto 3rem;">
+                Powering the next generation of businesses with production-ready AI workflows,
+                high-impact Notion templates, and strategic architectural blueprints.
+            </p>
+
+            <div class="nav-pills animate-fade-up">
+                <div class="nav-pill active">All Products</div>
+                <div class="nav-pill">n8n Workflows</div>
+                <div class="nav-pill">Notion Templates</div>
+                <div class="nav-pill">AI Frameworks</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Content -->
+    <section class="collection-section">
+        <div class="container">
+            <!-- Featured: n8n Suite -->
+            <div class="product-banner-card glass animate-fade-in">
+                <div class="product-image-side">
+                    <div class="product-visual">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                </div>
+                <div class="product-info-side">
+                    <span class="product-badge">Featured Resource</span>
+                    <h3 class="product-name">Premium n8n Workflow Automation Suite</h3>
+                    <p class="product-description">
+                        A battle-tested collection of specialized n8n workflows designed for enterprise agency
+                        scale.
+                        Includes RAG pipelines, lead qualification agents, and multi-channel notification systems.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 10+ Production Workflows</li>
+                        <li><i class="fas fa-check"></i> AI Agent Orchestration</li>
+                        <li><i class="fas fa-check"></i> Comprehensive Documentation</li>
+                    </ul>
+                    <div class="product-cta">
+                        <a href="https://github.com/Zie619/n8n-workflows/tree/main/workflows" target="_blank"
+                            class="btn btn-primary">
+                            <i class="fab fa-github"></i> Explore on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notion Marketplace -->
+            <div class="products-marketplace">
+                <!-- Category 1: Business OS & Agency -->
+                <div class="marketplace-category">
+                    <h3 class="category-title"><i class="fas fa-briefcase"></i> Business OS & Agency Systems</h3>
+                    <div class="notion-grid">
+                        <!-- Product 1 -->
+                        <div class="notion-card">
+                            <img src="assets/notion_business.png" alt="Creator Revenue HQ" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Creator Revenue HQ - Digital Product Business OS</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/uwjgas" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="notion-card">
+                            <img src="assets/notion_business.png" alt="SaaS Business Hub" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>SaaS Business Hub - Complete Template | 15+ Components</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/crcrq" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="notion-card">
+                            <img src="assets/notion_business.png" alt="Freelance Business Hub" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Freelance Business Hub - Client & Project Management</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $28+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/zkpdwi" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Growth & Productivity -->
+                <div class="marketplace-category">
+                    <h3 class="category-title"><i class="fas fa-bolt"></i> Growth & Productivity</h3>
+                    <div class="notion-grid">
+                        <div class="notion-card">
+                            <img src="assets/notion_productivity.png" alt="Ultimate Productivity System"
+                                class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Ultimate Productivity System - Life & Goal Management</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $26+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/skjhz" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_productivity.png" alt="Habit Stacker Pro" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Habit Stacker Pro - 90-Day Challenge</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/lekonw" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_productivity.png" alt="Ultimate Productivity Hub"
+                                class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Ultimate Productivity Hub - Goal Tracking & KPI Dashboard</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $24+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/hquiq" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_productivity.png" alt="Student Success System" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Student Success System - Academic Organization</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $15+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/apvhdn" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: AI & Content Mastering -->
+                <div class="marketplace-category">
+                    <h3 class="category-title"><i class="fas fa-magic"></i> AI & Content Mastering</h3>
+                    <div class="notion-grid">
+                        <div class="notion-card">
+                            <img src="assets/notion_content.png" alt="AI Prompt Power Pack" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>AI Prompt Power Pack - 100+ Pro Templates</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $17+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/shlhrb" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_content.png" alt="Social Media Content Planner"
+                                class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Social Media Content Planner - Multi-Platform</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $24+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/ynnxj" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_content.png" alt="Content Creator Dashboard" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Content Creator Dashboard - YouTube/TikTok/Insta</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $24+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/xxstk" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_content.png" alt="Affiliate Marketing Tracker" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Affiliate Marketing Tracker & Dashboard</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/eilcwh" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Lifestyle & Finance -->
+                <div class="marketplace-category">
+                    <h3 class="category-title"><i class="fas fa-heart"></i> Lifestyle & Finance Management</h3>
+                    <div class="notion-grid">
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Personal Finance Tracker" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Personal Finance Tracker - Budget & Expenses</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $22+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/haebsi" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Real Estate Portfolio Manager"
+                                class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Real Estate Portfolio Manager - Professional</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/dwicxr" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Wedding Planner" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Wedding Planner & Event Management System</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> Free / Pay what you want</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/tvpwgvp" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Job Search & Career Tracker"
+                                class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Job Search & Career Tracker Template</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $16+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/knvwn" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Meal Planning" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Meal Planning & Recipe Manager Template</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $19+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/lcstdth" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notion-card">
+                            <img src="assets/notion_lifestyle.png" alt="Fitness Wellness" class="notion-thumb">
+                            <div class="notion-info">
+                                <h4>Fitness & Wellness Planner Template</h4>
+                                <div class="notion-price"><i class="fas fa-tag"></i> $21+</div>
+                            </div>
+                            <div class="notion-action">
+                                <a href="https://kiranbabuai.gumroad.com/l/armdis" target="_blank" class="btn-notion">
+                                    View Product <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project-Wide CTA -->
+    <section class="collection-cta-section">
+        <div class="container">
+            <div class="cta-glass animate-fade-in">
+                <h2>Custom Automation Needs?</h2>
+                <p>Scaling a digital product business requires custom infrastructure. I build bespoke AI agent
+                    architectures and specialized n8n enterprise workflows.</p>
+                <div class="cta-actions">
+                    <a href="index.html#contact" class="btn btn-primary">Book a Strategy Call</a>
+                    <a href="projects.html" class="btn btn-outline">Explore Custom Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">KB</span>
+                        <span class="logo-text">Kiran Babu</span>
+                    </a>
+                    <p>Expert AI Automation Engineer & Project Lead specialized in production-grade AI agent systems
+                        and digital product ecosystems.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="products.html">Digital Products</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/itskiranbabu" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/itskiranbabu" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="mailto:babu.jtek@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kiran Babu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

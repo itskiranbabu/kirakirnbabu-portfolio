@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'page_title': 'Blog | Kiran Babu Portfolio'
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Kiran Babu | Agile & AI Insights</title>
+    <meta name="description"
+        content="Articles and insights on AI automation, SaaS architecture, and full-stack development by Kiran Babu.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-header {
+            padding: 8rem 0 4rem;
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+
+        .blog-grid-page {
+            padding: 4rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .blog-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 4rem;
+            position: relative;
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-tertiary);
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Kiran Babu</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="container">
+            <span class="section-badge">Insights & Articles</span>
+            <h1 class="hero-title">Technical Blog</h1>
+            <p class="section-description">Exploring the intersection of Enterprise Agile, AI Innovation, and Digital
+                Transformation
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search articles...">
+        </div>
+
+        <div class="blog-filters">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Engineering</button>
+            <button class="filter-btn">AI / ML</button>
+            <button class="filter-btn">SaaS</button>
+            <button class="filter-btn">Career</button>
+        </div>
+
+        <div class="blog-grid-page">
+            <!-- Article 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+                        alt="SaaS Architecture">
+                    <div class="blog-date">Dec 28, 2024</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Architecture</span>
+                        <span class="blog-tag">SaaS</span>
+                    </div>
+                    <h3 class="blog-title">Architecting Multi-Tenant AI Platforms</h3>
+                    <p class="blog-description">A deep dive into building scalable, secure, and cost-effective
+                        multi-tenant architectures for modern AI SaaS applications.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bccab6ee8b0b?auto=format&fit=crop&q=80&w=800"
+                        alt="AI Automation">
+                    <div class="blog-date">Dec 15, 2024</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">AI</span>
+                        <span class="blog-tag">Automation</span>
+                    </div>
+                    <h3 class="blog-title">The Future of AI Agent Orchestration</h3>
+                    <p class="blog-description">Exploring how specialized AI agents are transforming workflow automation
+                        and the tools needed to orchestrate them effectively.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                        alt="Performance Optimization">
+                    <div class="blog-date">Nov 30, 2024</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Performance</span>
+                        <span class="blog-tag">React</span>
+                    </div>
+                    <h3 class="blog-title">Optimizing React Apps for 99th Percentile</h3>
+                    <p class="blog-description">Practical strategies for identifying and fixing performance bottlenecks
+                        in large-scale React applications focusing on LCP and INP.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
+                        alt="Team Mentorship">
+                    <div class="blog-date">Nov 12, 2024</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Leadership</span>
+                        <span class="blog-tag">Engineering</span>
+                    </div>
+                    <h3 class="blog-title">Scaling Engineering Teams: A Lead's Perspective</h3>
+                    <p class="blog-description">Building high-performance culture through mentorship, streamlined CI/CD,
+                        and consistent design systems.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-brand">
+                        <i class="fas fa-code"></i>
+                        <span>Kiran Babu</span>
+                    </div>
+                    <p class="footer-bio">Building the future of AI automation with robust SaaS architectures and
+                        user-centric designs.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/itskiranbabu" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/itskiranbabu/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/itskiranbabu" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:babu.jtek@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 Kiran Babu. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

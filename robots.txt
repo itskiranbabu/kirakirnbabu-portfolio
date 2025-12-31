@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://itskiranbabu.github.io/portfolio/sitemap.xml

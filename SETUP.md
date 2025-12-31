@@ -3,7 +3,7 @@
 Your professional GitHub portfolio is now live and ready to showcase your work!
 
 ## 🌐 Live URL
-**https://itskiranbabu.github.io/portfolio/**
+**https://itskiranbabu.github.io/kirakirnbabu-portfolio/**
 
 ## ✅ What's Included
 
@@ -39,7 +39,7 @@ Your professional GitHub portfolio is now live and ready to showcase your work!
 
 To make your portfolio live, follow these steps:
 
-1. Go to your repository: https://github.com/itskiranbabu/portfolio
+1. Go to your repository: https://github.com/itskiranbabu/kirakirnbabu-portfolio
 
 2. Click on **Settings** (top right)
 
@@ -53,7 +53,7 @@ To make your portfolio live, follow these steps:
 
 6. Wait 1-2 minutes for deployment
 
-7. Your site will be live at: **https://itskiranbabu.github.io/portfolio/**
+7. Your site will be live at: **https://itskiranbabu.github.io/kirakirnbabu-portfolio/**
 
 ## 📝 Customization Guide
 
@@ -212,7 +212,7 @@ If you need help:
 - Check README.md for documentation
 - Review code comments
 - Open an issue on GitHub
-- Contact: itskeyrun.ai@gmail.com
+- Contact: babu.jtek@gmail.com
 
 ## 🎉 Congratulations!
 
